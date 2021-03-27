@@ -3,382 +3,188 @@
 <head>
 
 <link rel="stylesheet" href="css/stylestuff.css">
+
 </head>
 
 <body>
 	<script src="js/ui.js"></script>
+  <script src="js/audioProcess.js"></script>
 <h2>Sonia can speak Chinese</h2>
 <section>
 <nav>
-<table>
-  <tr>
-    <th>Filename_of_Recording_shouldnt wrap?</th>
-    <th>Play_Controls</th>
-    <th>Click_to_Start_Recording</th>
-    <th>Click_to_Stop</th>
-  </tr>
-<tbody>
-  <tr>
-    <td>01 第1课 课文一</td>
-    <td><audio controls> <source src="audio/03 第15课 练习与运用.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-    <td  id="btnStart" rowspan = 90 style="width:100%;height:100%;background-color: blueviolet;">Click to Start <!-- button id="btnStart"  style="width:100%;height:100%">START RECORDING</button--> </td>
-    <td  id="btnStop" rowspan = 90 style="width:100%;height:100%;background-color: chartreuse;">Click to Stop <!--button id="btnStop" style="width:100%;height:100%">STOP RECORDING</button--> </td>>
-  </tr>
-<tr>
-<td>03 第15课 练习与运用_01.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_01.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
+<table id="tableOfFiles">
+  <tr><td>03 第15课 练习与运用_01.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_02.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_03.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_04.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_05.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_06.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_07.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_08.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_09.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_10.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_11.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_12.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_13.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_14.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_15.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_16.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_17.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_18.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_19.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_20.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_21.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_22.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_23.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_24.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_25.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_26.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_27.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_28.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_29.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_30.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_31.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_32.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_33.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_34.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_35.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_36.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_37.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_38.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_39.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_40.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_41.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_42.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_43.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_44.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_45.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_46.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_47.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_48.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_49.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_50.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_51.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_52.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_53.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_54.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_55.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_56.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_57.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_58.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_59.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_60.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_61.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_62.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_63.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_64.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_65.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_66.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_67.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_68.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_69.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_70.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_71.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_72.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_73.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_74.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_75.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_76.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_77.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_78.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_79.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_80.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_81.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_82.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_83.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_84.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_85.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_86.mp3</td></tr>
+  <tr><td>03 第15课 练习与运用_87.mp3</td></tr>
+  
+</tr>
+<td></td>
+<td><audio  style="width: 200px;"> <source src="audio/B2L03N15/03 第15课 练习与运用_06.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
 </tr>
-<tr>
-<td>03 第15课 练习与运用_02.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_02.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_03.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_03.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_04.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_04.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_05.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_05.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_06.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_06.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_07.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_07.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_08.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_08.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_09.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_09.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_10.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_10.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_11.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_11.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_12.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_12.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_13.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_13.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_14.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_14.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_15.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_15.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_16.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_16.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_17.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_17.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_18.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_18.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_19.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_19.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_20.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_20.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_21.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_21.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_22.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_22.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_23.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_23.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_24.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_24.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_25.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_25.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_26.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_26.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_27.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_27.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_28.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_28.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_29.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_29.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_30.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_30.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_31.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_31.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_32.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_32.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_33.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_33.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_34.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_34.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_35.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_35.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_36.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_36.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_37.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_37.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_38.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_38.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_39.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_39.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_40.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_40.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_41.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_41.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_42.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_42.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_43.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_43.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_44.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_44.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_45.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_45.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_46.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_46.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_47.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_47.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_48.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_48.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_49.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_49.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_50.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_50.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_51.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_51.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_52.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_52.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_53.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_53.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_54.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_54.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_55.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_55.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_56.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_56.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_57.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_57.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_58.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_58.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_59.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_59.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_60.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_60.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_61.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_61.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_62.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_62.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_63.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_63.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_64.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_64.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_65.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_65.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_66.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_66.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_67.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_67.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_68.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_68.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_69.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_69.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_70.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_70.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_71.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_71.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_72.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_72.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_73.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_73.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_74.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_74.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_75.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_75.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_76.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_76.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_77.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_77.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_78.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_78.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_79.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_79.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_80.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_80.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_81.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_81.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_82.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_82.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_83.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_83.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_84.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_84.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_85.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_85.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_86.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_86.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-<tr>
-<td>03 第15课 练习与运用_87.mp3</td>
-<td><audio controls> <source src="audio/B2L03N15/03 第15课 练习与运用_87.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
-</tr>
-
-</tbody>
 </table>
 </nav>
 <article>
-	<audio id="adioPlay" controls ></audio> 
+<table>
+  <tr>
+    <td> <button  id="btnStart" class="button" style="background-color: rgb(95, 216, 101);">Start Recording</button> </td>
+    <td> <button  id="btnStop" class="button" style="background-color: rgb(216, 95, 176);">Stop Recording</button></td>
+  </tr>
+  <tr>
+    <td> <button id="btnResponse" class="button" style="background-color: rgb(95, 216, 210);">Play Your Response</button> </td>
+    <td> <button id="btnBoth" class="button" style="background-color: rgb(107, 95, 216);">Play Response and Original</button>
+       
+     </td>
+  </tr>
+  <tr>
+<td colspan="2"> 
+<h2>Instructions</h2>
+<ul>
+<li>Pick a file from the list at the left</li>
+<li>Click on it to hear it.</li>
+<li>Record yourself saying the same thing by</li>
+  <ul>
+      <li>Click on the green button and speak</li>
+      <li>Click on the red button when you've finished</li>
+  </ul>
+  <li>Listen back by clicking the blueish buttons</li>
+
+</ul>
+</td>
+  </tr>
+
+</table>
+  
 </article>
 </section>
+<audio id="selectedTrack" ></audio>
+<audio id="adioPlay"  ></audio> 
+   
+
+<script language="javascript">
+  var tbl = document.getElementById("tableOfFiles");
+  var fDir = "audio/B2L03N15/"
+  var fName="";
+  if (tbl != null) {
+      for (var i = 0; i < tbl.rows.length; i++) {
+          for (var j = 0; j < tbl.rows[i].cells.length; j++)
+              tbl.rows[i].cells[j].onclick = function () { getval(this); };
+      }
+  }
+  function getval(cel) {
+     //alert(cel.innerHTML);
+      var t=cel.innerHTML;
+      fName = fDir+t
+     //alert(fName);
+      let selectedAudio=document.getElementById("selectedTrack")
+      selectedAudio.src=fName;
+      selectedAudio.play();
+
+  }
+
+ document.getElementById("btnBoth").addEventListener("click",function(){
+        let response = document.getElementById("adioPlay")
+           response.play();
+           response.addEventListener('ended',function(){
+          let selectedAudio=document.getElementById("selectedTrack")
+          selectedAudio.src=fName;
+          selectedAudio.play();
+    });
+       
+  }
+  );
+
+  document.getElementById("btnResponse").addEventListener("click",function(){
+       document.getElementById("adioPlay").play();
+     }
+     );
+
+</script>
+
+ </body>
+</html>
 </body>
 </html>

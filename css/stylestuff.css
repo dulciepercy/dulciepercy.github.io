@@ -11,13 +11,37 @@
         border-collapse: collapse;
       
       }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      #tableOfFiles td, #tableOfFiles th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
       
+      #tableOfFiles tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #tableOfFiles tr:hover {background-color: #ddd;}
+      
+      button.button {
+        
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+
       /* Create two columns/boxes that floats next to each other */
       nav {
         float: left;
-        width: 60%;
+        width: auto;
         height: 40%;
-        background: rgb(118, 113, 143);
+        background: rgb(205, 205, 207);
         padding: 20px;
         overflow:scroll;
       
@@ -50,7 +74,7 @@
       }
       
       /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-      @media (max-width: 600px) {
+      @media (max-width: 100px) {
         nav, article {
           width: 100%;
           height: auto;
@@ -64,6 +88,7 @@
         white-space: nowrap;
       }
       
-      tr:nth-child(even) {
-        background-color: #dddddd;
+      
       }
+      
+     
