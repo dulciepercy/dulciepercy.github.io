@@ -1,78 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}	
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 60%;
-  height: 40%;
-  background: rgb(118, 113, 143);
-  padding: 20px;
-  overflow:scroll;
-
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 30%;
-  background-color: #f1f1f1;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  width:auto;
-  white-space: nowrap;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-
-</style>
+  <link rel="stylesheet" href="css/stylestuff.css">
 <script> 
 
 	let audioIN = { audio: true }; 
@@ -176,6 +105,7 @@ tr:nth-child(even) {
 </head>
 
 <body>
+  <script src="js/ui.js"></script>
 <h2>Sonia can speak Chinese</h2>
 <section>
 <nav>
