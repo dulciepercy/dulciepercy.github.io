@@ -135,7 +135,17 @@
 </ul>
 </td>
   </tr>
-
+</tr>
+<tr><td>You are listening to: </td>
+    <td id="fNameDisplay">
+        <script>fName.innerHTML</script>
+    </td>
+</tr>
+<tr>
+  <td>
+      <a href="./index.html"><h3>Go back to the Index</h3></a>
+  </td>
+</tr>
 </table>
   
 </article>
@@ -162,7 +172,7 @@
       let selectedAudio=document.getElementById("selectedTrack")
       selectedAudio.src=fName;
       selectedAudio.play();
-
+      document.getElementById("fNameDisplay").innerHTML = t;
   }
 
  document.getElementById("btnBoth").addEventListener("click",function(){
