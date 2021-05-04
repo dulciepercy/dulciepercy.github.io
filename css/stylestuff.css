@@ -26,7 +26,7 @@
       
       button.button {
         
-        border: none;
+        border: 5px;
         color: white;
         padding: 15px 32px;
         text-align: center;
@@ -34,7 +34,53 @@
         display: inline-block;
         font-size: 16px;
       }
+      
+      #btnStart {
+        font-size: 16px;
+        padding: 15px 32px;
+        color: black;
+        background-color: greenyellow;
+         }
+      #btnStart:hover
+{
+background-image:none;
+background-color:#8daf3c;
+}
 
+#btnStop {
+  font-size: 16px;
+  padding: 15px 32px;
+  color: black;
+  background-color: pink;
+   }
+#btnStop:hover
+{
+background-image:white;
+background-color:red;
+}
+
+#btnResponse {
+  font-size: 16px;
+  padding: 15px 32px;
+  color: black;
+  background-color: lightblue;
+   }
+#btnResponse:hover
+{
+color:white;
+background-color:blue;
+}
+#btnBoth {
+  font-size: 16px;
+  padding: 15px 32px;
+  color: black;
+  background-color: rgb(173, 165, 218);
+   }
+#btnBoth:hover
+{
+color:white;
+background-color:rgb(70, 6, 66);
+}
 
       /* Create two columns/boxes that floats next to each other */
       nav {
