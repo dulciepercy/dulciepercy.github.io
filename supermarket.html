@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/stylestuff.css">
+</head>
+<body>
+	<script src="js/ui.js"></script>
+  <script src="js/audioProcess.js"></script>
+<h2>Sonia can speak Chinese</h2>
+<h3>Chinese for Foreigners - In the Supermarket</h3>
+<section>
+<nav>
+<table id="tableOfFiles">
+    <tr><td>supermarket_01.mp3</td></tr>
+    <tr><td>supermarket_02.mp3</td></tr>
+    <tr><td>supermarket_03.mp3</td></tr>
+    <tr><td>supermarket_04.mp3</td></tr>
+    <tr><td>supermarket_05.mp3</td></tr>
+    <tr><td>supermarket_06.mp3</td></tr>
+    <tr><td>supermarket_07.mp3</td></tr>
+    <tr><td>supermarket_08.mp3</td></tr>
+    <tr><td>supermarket_09.mp3</td></tr>
+    <tr><td>supermarket_10.mp3</td></tr>
+    <tr><td>supermarket_11.mp3</td></tr>
+    <tr><td>supermarket_12.mp3</td></tr>
+    <tr><td>supermarket_13.mp3</td></tr>
+    <tr><td>supermarket_14.mp3</td></tr>
+    <tr><td>supermarket_15.mp3</td></tr>
+    <tr><td>supermarket_16.mp3</td></tr>
+    <tr><td>supermarket_17.mp3</td></tr>
+    <tr><td>supermarket_18.mp3</td></tr>
+    <tr><td>supermarket_19.mp3</td></tr>
+    <tr><td>supermarket_20.mp3</td></tr>
+   
+</tr>
+<td></td>
+<!--  The following line has to stay in - for some reason it needs this audio control to work-->
+<td><audio  style="width: 200px;"> <source src="audio/supermarket/supermarket_01.mp3" type="audio/mpeg">Audio tag is not supported in this browser.</audio></td>
+</tr>
+</table>
+</nav>
+<article>
+<table>
+  <tr>
+    <td> <button  id="btnStart">Start Recording</button> </td>
+    <td> <button  id="btnStop" >Stop Recording</button></td>
+  </tr>
+  <tr>
+    <td> <button id="btnResponse">Play Your Response</button> </td>
+    <td> <button id="btnBoth" >Play Response and Original</button>
+       
+     </td>
+  </tr>
+  <tr>
+<td colspan="2"> 
+<h2>Instructions</h2>
+<ul>
+<li>Pick a file from the list at the left</li>
+<li>Click on it to hear it.</li>
+<li>Record yourself saying the same thing by</li>
+  <ul>
+      <li>Click on the green button and speak</li>
+      <li>Click on the red button when you've finished</li>
+  </ul>
+  <li>Listen back by clicking the blueish buttons</li>
+
+</ul>
+</td>
+  </tr>
+</tr>
+<tr><td>You are listening to: </td>
+    <td id="fNameDisplay">
+        <script>fName.innerHTML</script>
+    </td>
+</tr>
+<tr>
+  <td>
+      <a href="./index.html"><h3>Go back to the Index</h3></a>
+  </td>
+</tr>
+</table>
+  
+</article>
+</section>
+<audio id="selectedTrack" ></audio>
+<audio id="adioPlay"  ></audio> 
+   
+
+<script language="javascript">
+  var tbl = document.getElementById("tableOfFiles");
+  var fDir = "audio/supermarket/"
+  var fName="";
+  if (tbl != null) {
+      for (var i = 0; i < tbl.rows.length; i++) {
+          for (var j = 0; j < tbl.rows[i].cells.length; j++)
+              tbl.rows[i].cells[j].onclick = function () { getval(this); };
+      }
+  }
+  function getval(cel) {
+     //alert(cel.innerHTML);
+      var t=cel.innerHTML;
+      fName = fDir+t
+     //alert(fName);
+      let selectedAudio=document.getElementById("selectedTrack")
+      selectedAudio.src=fName;
+      selectedAudio.play();
+      document.getElementById("fNameDisplay").innerHTML = t;
+  }
+
+ document.getElementById("btnBoth").addEventListener("click",function(){
+        let response = document.getElementById("adioPlay")
+           response.play();
+           response.addEventListener('ended',function(){
+          let selectedAudio=document.getElementById("selectedTrack")
+          selectedAudio.src=fName;
+          selectedAudio.play();
+    });
+       
+  }
+  );
+
+  document.getElementById("btnResponse").addEventListener("click",function(){
+       document.getElementById("adioPlay").play();
+     }
+     );
+
+</script>
+
+ </body>
+</html>
+</body>
+</html>
